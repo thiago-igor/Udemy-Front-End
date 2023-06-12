@@ -1,0 +1,21 @@
+.form::placeholder{ /*Editando placeholder*/
+    color: darkred;
+}
+
+ul li::after{ 
+    content: '-' /*Adiciona '-' depois do 'item'*/
+}
+
+p::first-letter{ /*Primeira letra*/
+    font-size: 50px;
+}
+
+p::first-line{ /*Primeira linha*/
+    background-color: red;
+}
+
+p::selection{ /*Tudo que seleciono com o mouse*/
+    background: black;
+    color: white;
+}
+

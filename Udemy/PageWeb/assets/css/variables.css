@@ -1,0 +1,7 @@
+:root{ /*Criando variaveis globais*/
+    --primary-color: #0A1128;
+    --white-color: #FFFFFF;
+    --light-gray-color:#EEE;
+    --gap: 3rem;
+    --secondary-color: crimson;
+}

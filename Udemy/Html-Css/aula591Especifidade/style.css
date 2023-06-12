@@ -1,0 +1,16 @@
+/*
+Ordem de Expecificidade:
+Id   Classes, Atributos e pseudo-classes  Elementos e pseudo-elementos
+*/
+
+#p{
+    background-color: red;
+}
+
+.p{
+    background-color: yellow; /*Nao utiliza , pois o Id é Maior que uma classe*/
+}
+
+p#p.p{
+    background-color: darkmagenta; /*Utiliza, pois a Especifidade é maior*/
+}

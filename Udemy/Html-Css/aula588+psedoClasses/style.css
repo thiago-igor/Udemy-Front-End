@@ -1,0 +1,19 @@
+p:not(.meio){ /*Negação, muda todos paragrafos, menos o com a classe meio*/
+    color:blue;
+}
+
+ul li:nth-child(odd){ /*Seleciona todos os indices impares*/
+    background-color: rebeccapurple;
+}
+
+ul li:nth-child(even){ /*Seleciona todos os indices Pares*/
+    background-color: darkcyan;
+}
+
+ul li:nth-child(3n){ /*Seleciona os indices de 3 em 3*/
+    background-color: green;
+}
+
+ul li:nth-child(3n+5){ /*Começando do 5, seleciona o indice de 3 em 3*/
+    background-color: darkred;
+}

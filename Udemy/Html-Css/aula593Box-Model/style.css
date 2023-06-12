@@ -1,0 +1,15 @@
+.texto{
+    box-sizing: border-box;
+    display: block; /*Ja vem por padrao na div*/
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+    max-height: 600px;
+    min-width: 0;
+    min-height: 0;
+    overflow: auto; /*Da a opção de rolar caso acabe o box quando tem muito texto*/
+    margin: 0 auto 50px auto; /*Deixa a div no centro e empurra um elemento para lonje do outro*/
+    padding: 50px;/*Preenchimento*/
+    border: 5px solid black;/*Bordar*/
+}

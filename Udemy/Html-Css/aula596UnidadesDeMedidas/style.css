@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%; /*Isso equivale a 10px no navegador*/
+    scroll-behavior: smooth; /*Pagina rolar suavemente usando os links dentro do site*/
+}
+
+.pai{ /*Medidas relativas*/
+    width: 50em;
+    height: 30rem;/*30 X 10px = 300px*/
+    background: yellow;
+}
+
+p{
+    font-size: 1.6rem; /*1.6 X 10px = 16px*/
+}
+
+
+
+.pai2{
+    width: 50em;
+    height: 100vh; /*Equivale a porcentagem, ex: 100%*/
+    background: rebeccapurple;
+}
+
+.color-one{
+    background: turquoise;
+}
+
+.color-two{
+    background: darkgreen;
+}
+
+
+
+
+
+
+/*
+.pai{
+    font: size 50px;
+}
+
+p{
+    font-size: 2em; /*Se baseia no elemento pai mais proximo. exemplo: pai= 50px, logo p = 2 x 50px
+}
+*/

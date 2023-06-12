@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-flow: row nowrap;
+    background: darkcyan;
+}
+
+.flex-item{
+    /*
+    flex-grow: 1; /*Divide o espaço para os elementos da tela /
+
+    flex-basis: 320px; /*Tamanho base de cada elemento é de 320px, podendo aumentar sobrando espaço na tela /
+
+    flex-shrink: 1; /*Permitir que o elemento diminua
+    */
+    flex: 1 1 320px; /*Atalho para as funções a cima*/
+    height: 200px;
+    color: #fff;
+    background: red;
+    margin: 10px;
+}
+
+/*OBS: nao estao sendo aplicados por conta dos codgos acima*/
+.flex-item:nth-child(3){ /*pegando elemento 3*/
+    align-self: flex-end;
+    order: -4; /*Diz a ordem que quero meu elemento*/
+}
+
+.flex-item:nth-child(4){ /*pegando elemento 4*/
+    align-self: center;
+}

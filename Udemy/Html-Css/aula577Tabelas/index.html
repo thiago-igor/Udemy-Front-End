@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .responsive-table{ /*Dentro do site, apenas a tabela vai para o lado*/
+            max-width: 100%;
+            overflow-x: auto; /*o que passar do eixo 'x' é automatico*/
+        }
+
+        table{
+            border-collapse: collapse; /* une as bordas*/
+            width: 800px;
+        }
+        table td, table th{
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            font-style: italic;
+            caption-side: bottom;
+            text-align: left;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        tfoot td, table th{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+
+<div class="responsive-table">
+    <table>
+        <caption>Uma descrição para a tabela</caption>
+        <thead> <!--Cabeçalho-->
+            <tr><!--Linha-->
+                <th>Titulo 1</th> <!--Coluna da tabela-->
+                <th>Titulo 2</th>
+                <th>Titulo 3</th>
+            </tr>
+        </thead>
+
+        <tbody><!--Corpo tabela-->
+            <tr>
+                <td>Coluna 1</td> <!--Coluna-->
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+            </tr>
+
+            <tr>
+                <td>Coluna 1</td> <!--Coluna-->
+                <td>Coluna 2</td>
+                <td>Coluna 3</td>
+            </tr>
+
+        </tbody>
+        <tfoot><!--Roda Pe-->
+            <tr>
+                <td colspan="2" rowspan="2">Coluna 1</td> <!--Aqui pegamos 2 colunas e 2 linhas-->
+                <td>TOTAL:</td>
+            </tr>
+            <tr>
+                <td>R$:555,47</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
+
+</body>
+</html>

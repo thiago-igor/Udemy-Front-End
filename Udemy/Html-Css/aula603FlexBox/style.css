@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction:column; /*formar a coluna*/
+    justify-content: space-between; /*espaçados no eixo X*/
+    flex-wrap: wrap; /*Pode ser utilizado para quebrar a linha se nao tiver mais espaço*/
+    align-items: center; /*Ao centro No eixo Y*/
+    align-content:flex-start; /*Alinhar tofo conteudo no começo*/
+    background: darkcyan;
+    height: 400px;
+}
+
+.flex-item{
+    width: 100%;
+    color: #fff;
+    background: red;
+    margin: 10px;
+}

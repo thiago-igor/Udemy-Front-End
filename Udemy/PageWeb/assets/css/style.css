@@ -1,0 +1,177 @@
+.intro-content{
+    position: relative;
+    /*top: -4rem;*/
+    display: grid; 
+    grid-template-columns: 1fr 1.5fr; /*dividindo as div em 2 espaços iguais*/
+    align-items: center; /*Alinha no centro*/
+    gap: var(--gap);
+    min-height: 100vh; /*Dando para grid o tamanho total da tela*/
+}
+
+.intro-text-content, .intro-img{ /*Colocando flex dentro de colunas da grid*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.top3-content{
+    max-width: 64rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; /*Nao permite que a coluna se quebre*/
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.grid-main-heading{
+    margin-bottom: 1rem; /*MArgin de 20px no h2*/
+}
+
+.grid-descript{
+    padding-bottom: 3rem; /*Padding de 30 px nos paragrafos*/
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Separando em 3 colunas iguais*/
+    gap: var(--gap);
+    counter-reset: grid-counter; /*Criando contador*/
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative; /*conteiner dentro do h3 */
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.grid h3::before{ /*Antes do meu titulo:*/
+    counter-increment: grid-counter; /*Criando um contador na grid*/
+    content: counter(grid-counter); /*Adicionando o conteudo*/
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform:rotate(5deg)/*Girando o elemento 5 graus*/
+}
+
+.gallery-img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;/*Quando diminui a tela, a imagem diminui junto*/
+}
+
+.gallery-img img{
+    transition:all 300ms ease-in-out ; /*Colocar efeito na img*/
+}
+
+.gallery-img img:hover{
+    /*transform: ; varios tipos de efeitos na img */
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+
+.contact-form {
+    grid-column: span 2; /*Para pegar as duas colunas*/
+}
+
+.contact-form .form-grid{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.font-grid legend{
+    font-style: italic;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    
+}
+
+.form-group{
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block; /*Assim, os inputs fica em baixo dos label*/
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea{
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.form-group button{
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+}
+
+.footer{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a{
+    color: var(--primary-color)
+}
+
+.heart{
+    color: var(--secondary-color);
+}
+
+.footer p{
+    margin: 0;
+    padding: 3rem;
+}
+
+
+@media (max-width:800px){ /*Quando a largura da tela for menor que 800px ele execulta*/
+    .intro-content, .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+    .gallery-img img{
+        width: 100%; /*Para imagem ocupar toda tela*/
+    }
+
+    .grid-one-content{
+        display: block; 
+    }
+}

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pai h1+p{ /*Todo 'p' que tiver depois de um 'h1' tera cor red*/
+    color: red;
+}
+
+.pai h2~p{ /*Seleciona todos os 'p' depois de 'h2'*/
+    color: red;
+}
+
+[meu-atributo]{ /*Seleciona exatamente o atributo h1*/
+    color: red;
+}

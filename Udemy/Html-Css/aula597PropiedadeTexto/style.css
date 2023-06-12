@@ -1,0 +1,16 @@
+p{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold; /*Peso da font: deixa em negrito*/
+    direction: ltr; /*Direção da esquerda para direita do texto*/
+    letter-spacing: 2px; /*Espaçamento entre as letras*/
+    word-spacing: 5px; /*Espaçamento entre as palavras*/
+    line-height: 25px;/*Altura entre as linhas*/
+    text-align: center; /*Alinha*/
+    text-decoration: underline;/*Linha abaixo do texto*/
+    text-indent: 50px; /*Identa os paragrafos*/
+    text-shadow: 1px 1px 2px red; /*Sombra vermelha no texto*/
+    text-transform: lowercase; /*Transforma tudo em minusculo*/
+    
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!--LINK DE EXEMPLOS DE ABREVIAÇÕES: https://docs.emmet.io/cheat-sheet/-->
+
+</head>
+<body>
+    <div id="meu-id" class="minha-classe"></div><!--Atalho: div#meu-id.minha-classe--> 
+
+    <!--Atalho: div#meu-id-$.minha-classe.outra-classe{o conteudo $}*3-->
+    <div id="meu-id-1" class="minha-classe outra-classe">o conteudo 1</div>
+    <div id="meu-id-2" class="minha-classe outra-classe">o conteudo 2</div>
+    <div id="meu-id-3" class="minha-classe outra-classe">o conteudo 3</div>
+
+    <!--ul>li{conteudo $}*3-->
+     <ul>
+        <li>conteudo 1</li>
+        <li>conteudo 2</li>
+        <li>conteudo 3</li>
+     </ul>
+
+     <!--ul(li>a{conteudo $})*3-->
+     <ul></ul>
+     <li><a href="">conteudo 1</a></li>
+     <li><a href="">conteudo 2</a></li>
+     <li><a href="">conteudo 3</a></li>
+
+
+     <!--div.minha-classe#meu-id>h1{conteudo qualquer}+p{conteudo qualquer}>a{Clique aqui}+{para saber mais}-->
+     <div class="minha-classe" id="meu-id">
+        <h1>conteudo qualquer</h1>
+        <p>conteudo qualquer<a href="">Clique aqui</a>para saber mais</p>
+     </div>
+
+     <style>
+        body{
+          width: 100%; /*w100p*/  
+          height: 100vh;/*h100vh*/
+          margin: 10rem;/*m10rem*/
+          padding: 10%;/*p10p*/
+          display: flex;/*df*/
+          display: grid;/*dg*/
+          display: none;/*dn*/
+          background-color: #fff;/*bgc*/
+          background-image: url();/*bgi*/
+          
+
+        }
+     </style>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            cursor: pointer; /*O que esta dentro do label fica aparece como clicavel*/
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <form action="#" method="get" target="_blank">
+           <p>Meu formulario</p>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Seu Nome" required>
+                <!--required: obriga a preencher-->
+            </p>
+
+            <p>
+                <label for="dev">Sou o Desenvolvedor 1:</label>
+                <input type="checkbox" name="dev" id="dev" value="sim"> <br>
+                <label for="dev2">Sou o Desenvolvedor 2:</label>
+                <input type="checkbox" name="dev2" id="dev2" value="sim"> <br>
+                <label for="dev3">Sou o Desenvolvedor 3:</label>
+                <input type="checkbox" name="dev3" id="dev3" value="sim"> <br>
+            </p>
+
+            <p>
+                Gênero: <br>
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="genero" id="feminino" value="sim"> <br>
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="genero" id="masculino" value="sim"> <br>
+                <label for="sem">Sem Genero</label>
+                <input type="radio" name="genero" id="sem" value="sim"> <br>
+            </p>
+
+            <p>
+                <label for="date">Data:</label> <br>
+                <input type="date" name="date" id="date">
+            </p>
+
+            <p>
+                <label for="dateTime">Data:</label> <br>
+                <input type="datetime-local" name="dateTime" id="dateTime">
+            </p>
+
+            <p>
+                <label for="time">Data:</label> <br>
+                <input type="time" name="time" id="time">
+           <p>
+
+            <p>
+                <label for="email">Seu Email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="Seu @Email">
+           <p>
+
+            <p>
+                <label for="file">Sua Foto:</label><br>
+                <input type="file" name="file" id="file" accept=".png, image/*">
+            </p>
+
+            <p>
+                <label for="Number">Number:</label><br>
+                <input type="Number" name="number" id="number" placeholder="Digite um numero">
+            </p>
+
+            <p>
+                <label for="password">Sua Senha:</label><br>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </p>
+
+            <p>
+                <label for="url">Sua URL</label><br>
+                <input type="url" name="url" id="url" placeholder="Digite sua URL">
+            </p>
+
+            <p>
+                <label for="select">Selecione alguma opção:</label>
+                <select name="select" id="select">
+                    <option value="qualquer 1" label="label 1"></option>
+                    <option value="qualquer 2" label="label 2"></option>
+                    <option value="qualquer 3" label="label 3"></option>
+                </select>
+            </p>
+
+            <p>
+                <label for="textarea">Texto Area:</label><br>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            </p>
+            <button type="reset">Reset</button> <!--Resseta o formulario-->
+            <button type="submit">Enviar</button> <!--envia formulario-->
+           </p>
+        </form>
+    </section>
+</body>
+</html>
+
+<!--OBS: "placeholder" diz o que o usuario precisa digitar no formulario-->

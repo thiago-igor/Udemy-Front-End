@@ -1,0 +1,43 @@
+.heading{
+    transition:all 1s ease-in-out /*Efeito de transição*/
+}
+
+.heading:hover{
+    background: rgba(255, 77, 160, 0.671); /*Toda vez que passar o mouse em cima, o titulo fica vermelho*/
+}
+
+a{ /*Cor de todos os links*/
+    color: darkorange;
+}
+
+a:link {
+    color:deeppink
+}
+
+a:visited{ /*Link nunca visitado*/
+    color: firebrick;
+}
+
+a:hover { /*hover: ação de passar o mouse em cima*/
+    background: darkslateblue;
+    color: white;
+    text-decoration: none; /*tira a linha do link*/
+}
+
+a:active { /*active: ação ao clicar no link*/
+    background: green;
+    color: white;
+    text-decoration: none; 
+}
+
+input:focus{
+    box-shadow: 0 0 5px rgba(0, 0, 0.5);
+}
+
+input:checked + p{ /*sempre que o imput tiver marcado, executa o 'p' adjasente */
+    background-color: red;
+}
+
+.pai .lista li:first-child{ /*Primeiro filho da lista e editado*/
+    background-color: red;
+}
