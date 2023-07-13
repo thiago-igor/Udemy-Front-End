@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Programa de Nacionalidade Brasileira:</h1>
+        Digite o pais que nasceu: <input type="text" name="txt1" id="txt1">
+        <input type="button" value="Verificar" onclick="analisar()">
+        <div id="res">Resultado:</div>
+
+    </main>
+        
+    <script>
+        var txt = window.document.getElementById('txt1')
+        var res = window.document.querySelector('div#res')
+        var nac = String(txt.value)
+        res.innerHTML = `Seu país de origem é ${nac}`
+
+        if(nac == 'brasil' || nac == 'Brasil'){
+            res.innerHTML += `<p>Parabéns voce é brasileiro!!! </p>` 
+        }else{
+            res.innerHTML += `<p>Infelizmente voce não é brasileiro!</p>`
+        }
+    </script>
+
+</body>
+</html>
