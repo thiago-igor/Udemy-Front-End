@@ -16,15 +16,17 @@
     </main>
         
     <script>
-        var txt = window.document.getElementById('txt1')
-        var res = window.document.querySelector('div#res')
-        var nac = String(txt.value)
-        res.innerHTML = `Seu país de origem é ${nac}`
+        function analisar() {
+            var txt = window.document.getElementById('txt1')
+            var res = window.document.querySelector('div#res')
+            var nac = String(txt.value)
+            res.innerHTML = `Seu país de origem é ${nac}`
 
-        if(nac == 'brasil' || nac == 'Brasil'){
-            res.innerHTML += `<p>Parabéns voce é brasileiro!!! </p>` 
-        }else{
-            res.innerHTML += `<p>Infelizmente voce não é brasileiro!</p>`
+            if(nac == 'brasil' || nac == 'Brasil'){
+                res.innerHTML += `<p>Parabéns voce é brasileiro!!! </p>` 
+            }else{
+                res.innerHTML += `<p>Infelizmente voce não é brasileiro!</p>`
+            }
         }
     </script>
 
