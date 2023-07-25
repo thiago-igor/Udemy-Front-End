@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(42, 95, 131);
+}
+
+section {
+    background-color: #ffffff;
+    max-width: 100vh;
+    max-height: 100vh;
+    text-align: center;
+}
