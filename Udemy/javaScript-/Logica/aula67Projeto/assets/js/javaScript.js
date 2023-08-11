@@ -39,6 +39,7 @@ function criaTarefa(textoInput) {
     tarefas.appendChild(li);
     limpaInput();
     criaBotaoApagar(li);
+    salvarTarefas();
 }
 
 btnTarefa.addEventListener('click', function() {
@@ -52,6 +53,33 @@ document.addEventListener('click', function(e){
     if(el.classList.contains('apagar')){// se contem a classe apagar
         console.log('Apagar')
         el.parentElement.remove(); // remove o pai do botao 'apagar'
+        salvarTarefas();
     }
 })
 
+function salvarTarefas() {
+    const liTarefas = tarefas.querySelectorAll('li');
+    const listaDeTarefas = [];
+
+    for(let tarefa of liTarefas){
+        let tarefaTexto = tarefa.innerText;
+        tarefaTexto = tarefaTexto.replace('Apagar', '') // substitui a palavra apagar por nada
+        listaDeTarefas.push(tarefaTexto);
+    }
+
+    const tarefasJSON = JSON.stringify(listaDeTarefas); // transforma o arrey em strings
+    localStorage.setItem('tarefas', tarefasJSON); // salva strings no navegador
+
+}
+
+function adicionaTarefasSalvas(){ // para salvar no navegador
+    const tarefas = localStorage.getItem('tarefas')
+    const listaDeTarefas = JSON.parse(tarefas) // convertendo as strings em um arry novamente 
+    console.log(listaDeTarefas);
+
+    for(let tarefa of listaDeTarefas){
+        criaTarefa(tarefa);
+    }
+}
+
+adicionaTarefasSalvas();
